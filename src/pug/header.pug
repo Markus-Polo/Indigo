@@ -1,39 +1,39 @@
-header.pt-15
+header.header
   .container
     .row
       .logo-holder.col-6.col-lg-2
-        a.logo-holder(href='')
+        a.logo-holder(aria-label='logo' href='')
           img(src='./img/logo.svg' alt='')
-      nav.heder-nav.col-lg-6
-        ul.heder-nav__list.playn-text.d-flex
-          li.heder-nav__item
-            a.heder-nav__link(href='') Video
-          li.heder-nav__item
-            a.heder-nav__link(href='') About Method
-          li.heder-nav__item
-            a.heder-nav__link(href='') About School
-          li.heder-nav__item
-            a.heder-nav__link(href='') Price
-          li.heder-nav__item
-            a.heder-nav__link(href='') Revievs
+      nav.header-nav.col-lg-6
+        ul.header-nav__list.playn-text.d-flex
+          li.header-nav__item
+            a.header-nav__link(href='') Video
+          li.header-nav__item
+            a.header-nav__link(href='') About Method
+          li.header-nav__item
+            a.header-nav__link(href='') About School
+          li.header-nav__item
+            a.header-nav__link(href='') Price
+          li.header-nav__item
+            a.header-nav__link(href='') Revievs
       .mobile-menu-holder.col-6.d-flex.col-lg-4
         .dropdown-language.playn-text
-          button.lenguage-button.toggle-class-js(data-target='.lenguage-list' data-class-to-toggle='dropdown-show')
+          button.language-button.toggle-class-js(aria-label='language' data-target='.language-list' data-class-to-toggle='dropdown-show')
             span EN
             svg.icon-vector
               use(xlink:href='#vector')
-          ul.lenguage-list
-            li.lenguage-item
-              a.lenguage-link(href='') UA
-            li.lenguage-item
-              a.lenguage-link(href='') EN
-            li.lenguage-item
-              a.lenguage-link(href='') PL
+          ul.language-list
+            li.language-item
+              a.language-link(href='') UA
+            li.language-item
+              a.language-link(href='') EN
+            li.language-item
+              a.language-link(href='') PL
         .dropdown-call
           .header-button-holder
-            button.playn-text.main-button.toggle-class-js(data-target='.tel-list' data-class-to-toggle='dropdown-show')
+            button.playn-text.main-button.toggle-class-js(aria-label='cellphone' data-target='.tel-list' data-class-to-toggle='dropdown-show')
               span Сontacts
-          button.coll-button.toggle-class-js(data-target='.tel-list' data-class-to-toggle='dropdown-show')
+          button.coll-button.toggle-class-js(aria-label='cellphone' data-target='.tel-list' data-class-to-toggle='dropdown-show')
             svg.icon-viber
               use(xlink:href='#viber')
           ul.tel-list
@@ -44,7 +44,7 @@ header.pt-15
             li.tel-list__item
               a.tel-list__link(href='tel: +38000000000') +38000000000
         .dropdown-nav
-          button.lenguage-button.toggle-class-js(data-target='.dropdown-nav__list' data-class-to-toggle='dropdown-show')
+          button.language-button.toggle-class-js(aria-label='navigation' data-target='.dropdown-nav__list' data-class-to-toggle='dropdown-show')
             svg.icon-burger
               use(xlink:href='#burger')
           ul.dropdown-nav__list.playn-text
@@ -53,7 +53,7 @@ header.pt-15
             li.dropdown-nav__item
               a.dropdown-nav__link(href='') About Method
             li.dropdown-nav__item
-              a.heder-nav__link(href='') About School
+              a.header-nav__link(href='') About School
             li.dropdown-nav__item
               a.dropdown-nav__link(href='') Price
             li.dropdown-nav__item

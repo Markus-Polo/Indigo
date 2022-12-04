@@ -1,14 +1,21 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+}
 .logo-holder {
   display: flex;
 }
-.heder-nav {
+.header-nav {
   display: none;
   @include media-breakpoint-up(lg) {
     display: flex;
     align-items: center;
   }
 }
-.heder-nav__item {
+.header-nav__item {
   padding-right: 15px;
   @include media-breakpoint-up(xl) {
     padding-right: 26px;
@@ -63,7 +70,7 @@
 }
 .tel-list,
 .dropdown-nav__list,
-.lenguage-list {
+.language-list {
   display: none;
   position: absolute;
   z-index: 1;
@@ -73,10 +80,10 @@
   border-radius: 10px;
   background-color: white;
 }
-.lenguage-list {
+.language-list {
   left: 0;
 }
-.lenguage-item {
+.language-item {
   padding: 10px;
 }
 .dropdown-show {

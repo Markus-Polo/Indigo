@@ -1,3 +1,129 @@
 .header {
-  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+}
+.logo-holder {
+  display: flex;
+}
+.header-nav {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+.header-nav__item {
+  padding-right: 15px;
+  @include media-breakpoint-up(xl) {
+    padding-right: 26px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-right: 50px;
+  }
+}
+.mobile-menu-holder {
+  display: flex;
+  justify-content: flex-end;
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+  }
+}
+.dropdown-call,
+.dropdown-nav,
+.dropdown-language {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 10px;
+  @include media-breakpoint-up(lg) {
+    padding-left: 0;
+  }
+}
+.coll-button,
+.dropdown-nav {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+.icon-vector {
+  display: none;
+  width: 15px;
+  height: 10px;
+  fill: none;
+  @include media-breakpoint-up(lg) {
+    display: inline;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 20px;
+  }
+}
+.icon-viber {
+  width: 40px;
+  height: 35px;
+}
+.icon-burger {
+  width: 40px;
+  height: 24px;
+}
+.tel-list,
+.dropdown-nav__list,
+.language-list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: -50px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.language-list {
+  left: 0;
+}
+.language-item {
+  padding: 10px;
+}
+.dropdown-show {
+  display: block;
+}
+.header-button-holder {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.dropdown-nav__item,
+.tel-list__item {
+  padding: 10px;
+}
+.tel-list {
+  top: 40px;
+  left: -50px;
+  @include media-breakpoint-up(lg) {
+    top: 50px;
+    left: 80px;
+  }
+}
+.dropdown-nav__list {
+  left: -118px;
+  min-width: 190px;
+}
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  padding: 6px;
+  border: 3px solid #fcba32;
+  border-radius: 20px;
+  @include media-breakpoint-up(xl) {
+    width: 350px;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 350px;
+  }
 }

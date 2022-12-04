@@ -1,0 +1,19 @@
+@each $pt in (0, 15) {
+  .pt-#{$pt} {
+    padding-top: #{$pt}px;
+  }
+}
+
+.playn-text {
+  font-size: 18px;
+  line-height: 1.2;
+  @include media-breakpoint-up(xl) {
+    font-size: 24px;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}

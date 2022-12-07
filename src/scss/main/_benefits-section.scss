@@ -1,0 +1,108 @@
+.benefits-section {
+  padding-top: 46px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 170px;
+  }
+}
+.benefits-title-holder {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(md) {
+    justify-content: start;
+  }
+}
+.benefits-title-box {
+  display: inline-block;
+  position: relative;
+  max-width: 400px;
+  padding: 4px 50px;
+  border-radius: 50px;
+  background-color: #e93f7d;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 14px 62px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 570px;
+    padding: 10px 90px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #e86e97;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #e86e97;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+}
+.benefits-list {
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+.benefits-list__item {
+  display: flex;
+  position: relative;
+  max-width: 350px;
+  padding: 8px;
+  @include media-breakpoint-up(lg) {
+    max-width: min-content;
+  }
+}
+.benefits-icon {
+  width: 30px;
+  height: 30px;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    left: 29px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.benefits-list__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px #0000000a;
+  font-size: 16px;
+  @include media-breakpoint-up(lg) {
+    width: 388px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 24px;
+  }
+}

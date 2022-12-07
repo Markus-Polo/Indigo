@@ -6,15 +6,5 @@
 @import './atomic_class';
 
 .svg-sprite {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  /* stylelint-disable-next-line declaration-property-value-disallowed-list */
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
+  @include visually-hidden;
 }

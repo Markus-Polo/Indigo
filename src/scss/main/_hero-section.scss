@@ -1,11 +1,48 @@
 .hero-section {
-  padding-top: 85px;
-  background-color: #afafaf;
-  background-image: url(../img/background-hero.jpg);
+  @include img-retina(
+    '../img/background-hero-sm.jpg',
+    '../img/background-hero-sm-2x.jpg'
+  );
+  @include img-retina(
+    '../img/background-hero-sm.webp',
+    '../img/background-hero-sm-2x.webp'
+  );
+  padding-top: 70px;
+  background-color: whitesmoke;
+  background-position: right bottom;
   background-size: cover;
+  @include media-breakpoint-up(sm) {
+    @include img-retina(
+      '../img/background-hero-md.jpg',
+      '../img/background-hero-md-2x.jpg'
+    );
+    @include img-retina(
+      '../img/background-hero-md.webp',
+      '../img/background-hero-md-2x.webp'
+    );
+    background-position: right bottom;
+    background-size: cover;
+  }
+  @include media-breakpoint-up(lg) {
+    @include img-retina(
+      '../img/background-hero.jpg',
+      '../img/background-hero-2x.jpg'
+    );
+    @include img-retina(
+      '../img/background-hero.webp',
+      '../img/background-hero-2x.webp'
+    );
+    background-position: right bottom;
+    background-size: cover;
+  }
   @include media-breakpoint-up(xl) {
     padding-top: 170px;
   }
+}
+.hero-img-holder {
+  position: absolute;
+  top: 195px;
+  right: 0;
 }
 .hero-title-holder {
   max-width: 280px;
@@ -21,34 +58,36 @@
   @include media-breakpoint-up(xl) {
     padding-top: 130px;
   }
-  :first-child {
-    font-size: 16px;
-    @include media-breakpoint-up(xl) {
-      font-size: 20px;
-    }
-  }
-  :last-child {
-    max-width: 200px;
+}
+.hero-content__minor {
+  font-size: 16px;
+  @include media-breakpoint-up(xl) {
     font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    @include media-breakpoint-up(lg) {
-      max-width: 300px;
-    }
-    @include media-breakpoint-up(xl) {
-      max-width: 480px;
-      font-size: 32px;
-    }
+  }
+}
+.hero-content__main {
+  max-width: 175px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  @include media-breakpoint-up(sm) {
+    max-width: 200px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 300px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 480px;
+    font-size: 32px;
   }
 }
 .hero-button-holder {
   display: flex;
   justify-content: center;
   padding-top: 36px;
-  padding-bottom: 50px;
   @include media-breakpoint-up(sm) {
     justify-content: start;
-    padding-bottom: 240px;
+    padding-bottom: 170px;
   }
   @include media-breakpoint-up(md) {
     padding-bottom: 300px;

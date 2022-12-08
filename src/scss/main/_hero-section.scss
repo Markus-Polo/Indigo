@@ -3,10 +3,6 @@
     '../img/background-hero-sm.jpg',
     '../img/background-hero-sm-2x.jpg'
   );
-  @include img-retina(
-    '../img/background-hero-sm.webp',
-    '../img/background-hero-sm-2x.webp'
-  );
   padding-top: 70px;
   background-color: whitesmoke;
   background-position: right bottom;
@@ -16,10 +12,6 @@
       '../img/background-hero-md.jpg',
       '../img/background-hero-md-2x.jpg'
     );
-    @include img-retina(
-      '../img/background-hero-md.webp',
-      '../img/background-hero-md-2x.webp'
-    );
     background-position: right bottom;
     background-size: cover;
   }
@@ -27,10 +19,6 @@
     @include img-retina(
       '../img/background-hero.jpg',
       '../img/background-hero-2x.jpg'
-    );
-    @include img-retina(
-      '../img/background-hero.webp',
-      '../img/background-hero-2x.webp'
     );
     background-position: right bottom;
     background-size: cover;

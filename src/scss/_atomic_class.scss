@@ -17,11 +17,23 @@
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-center {
+  justify-content: center;
+}
 .title-1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   @include media-breakpoint-up(xl) {
     font-size: 64px;
+  }
+}
+.title-2 {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
   }
 }

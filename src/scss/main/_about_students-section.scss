@@ -1,0 +1,148 @@
+.about-students-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include media-breakpoint-up(lg) {
+    @include img-retina(
+      '../img/background-about-students.jpg',
+      '../img/background-about-students-2x.jpg'
+    );
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-size: contain;
+  }
+}
+.about-students-title-holder {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(lg) {
+    justify-content: start;
+  }
+}
+.about-students-title-box {
+  display: inline-block;
+  position: relative;
+  max-width: 400px;
+  padding: 12px 56px;
+  border-radius: 50px;
+  background-color: $primary;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 22px 92px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 570px;
+    padding: 24px 100px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $neutral-light;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $neutral-light;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+}
+.about-students-video {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.video-1 {
+  width: 280px;
+  height: 125px;
+  border-radius: 20px;
+  @include media-breakpoint-up(sm) {
+    width: 520px;
+    height: 265px;
+  }
+  @include media-breakpoint-up(md) {
+    width: 620px;
+    height: 300px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 890px;
+    height: 465px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 1359px;
+    height: 607px;
+  }
+}
+.about-students-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  &:hover .about-students-icon {
+    fill: $primary-light;
+  }
+}
+.about-students-icon {
+  width: 30px;
+  height: 30px;
+  fill: $secondary-light;
+  @include media-breakpoint-up(lg) {
+    width: 70px;
+    height: 70px;
+  }
+}
+.about-students--title {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  @include media-breakpoint-up(sm) {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.about-students-text {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  @include media-breakpoint-up(sm) {
+    max-width: 880px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+}

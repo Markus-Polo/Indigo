@@ -7,7 +7,7 @@
 .benefits-title-holder {
   display: flex;
   justify-content: center;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     justify-content: start;
   }
 }
@@ -72,10 +72,10 @@
     padding-top: 50px;
   }
   @include media-breakpoint-up(lg) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
   }
   @include media-breakpoint-up(xxl) {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .benefits-list__item {
@@ -109,11 +109,10 @@
 .benefits-list__text {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 220px;
   margin-bottom: 0;
   margin-left: 5px;
-  padding: 5px;
+  padding: 5px 18px;
   border-radius: 50px;
   box-shadow: 0 5px 15px #0000000a;
   font-size: 16px;
@@ -123,6 +122,8 @@
   @include media-breakpoint-up(lg) {
     width: 388px;
     height: 200px;
+    padding-right: 58px;
+    padding-left: 58px;
     border-radius: 20px;
     font-size: 24px;
   }

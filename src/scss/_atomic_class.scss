@@ -1,4 +1,4 @@
-@each $pt in (0, 15) {
+@each $pt in (0, 15, 30) {
   .pt-#{$pt} {
     padding-top: #{$pt}px;
   }
@@ -36,4 +36,36 @@
   @include media-breakpoint-up(lg) {
     font-size: 24px;
   }
+}
+.title-3 {
+  font-size: 20px;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+}
+.secondary-button-holder {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: start;
+  }
+}
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px;
+  border-radius: 20px;
+  background-color: #fcba32;
+  font-size: 16px;
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+}
+.right-0 {
+  right: 0;
+}
+.left-0 {
+  left: 0;
 }

@@ -4,17 +4,18 @@ section.about-students-section
       .about-students-title-box
         h2.title-2 What can our students do?
     .about-students-video
-      button.about-students-btn.right-0
-        svg.about-students-icon
-          use(xlink:href='#triple-r')
-      button.about-students-btn.left-0
-        svg.about-students-icon
-          use(xlink:href='#triple-l')
-      iframe.video-1(
-        src='https://www.youtube.com/embed/9aKZ74Taltc'
-        frameborder='0'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
-    h3.title-3.about-students--title Such results can be achieved by… everyone!
+      .about-students-iframe-wraper
+        button.about-students-btn.btn-right-0(aria-label='slider to the right')
+          svg.about-students-icon
+            use(xlink:href='#triple-r')
+        button.about-students-btn.btn-left-0(aria-label='slider to the left')
+          svg.about-students-icon
+            use(xlink:href='#triple-l')
+        iframe.about-students-iframe(
+          src='https://www.youtube.com/embed/9aKZ74Taltc'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+    h3.title-3.about-students-title Such results can be achieved by… everyone!
     p.about-students-text
       | You don't need super  math skills to count efficiently, even faster than a calculator!
       | You can see the results of our classes in the video. Such effects is positive after 3-6 months!

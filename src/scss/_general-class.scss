@@ -1,0 +1,43 @@
+.title-1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  @include media-breakpoint-up(xl) {
+    font-size: 64px;
+  }
+}
+.title-2 {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
+.title-3 {
+  font-size: 20px;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+}
+.secondary-button-holder {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: start;
+  }
+}
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px;
+  border-radius: 20px;
+  background-color: #fcba32;
+  font-size: 16px;
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+}

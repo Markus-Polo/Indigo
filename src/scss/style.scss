@@ -6,6 +6,7 @@
 @import './header';
 @import './main';
 @import './atomic_class';
+@import './general-class';
 
 .svg-sprite {
   @include visually-hidden;

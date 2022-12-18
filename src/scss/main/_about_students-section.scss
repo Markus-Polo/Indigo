@@ -14,7 +14,7 @@
 .about-students-title-holder {
   display: flex;
   justify-content: center;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     justify-content: start;
   }
 }

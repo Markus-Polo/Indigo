@@ -11,6 +11,13 @@
     font-size: 24px;
   }
 }
+.secondary-text {
+  font-size: 16px;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
 .d-flex {
   display: flex;
 }
@@ -19,4 +26,10 @@
 }
 .justify-content-center {
   justify-content: center;
+}
+.w-color {
+  color: white;
+}
+.text-align-center {
+  text-align: center;
 }

@@ -3,7 +3,8 @@ section.cities-section
     .cities-title-holder.cities-title-holder-sm
       .cities-title-box
         h2.title-2 What cities do our students study in?
-    .cities-box
+  .cities-box
+    .container
       .cities-content-wraper
         .cities-title-holder.cities-title-holder-xl
           .cities-title-box
@@ -14,37 +15,32 @@ section.cities-section
               use(xlink:href='#vector')
             h3.title-3.w-color.text-align-center Offline
             select.cities-select.secondary-text(name='Offline')
-              option(value='citi-1') Chelmsford
-              option(value='citi-2') Bath
+              option(value='city-1') Chelmsford
+              option(value='city-2') Bath
           .cities-select-wraper
             svg.cities-icon-vector
               use(xlink:href='#vector')
             h3.title-3.w-color.text-align-center Online
             select.cities-select.secondary-text(name='Online')
-              option(value='citi-1') Cardiff
-              option(value='citi-2') Bridgend
-              option(value='citi-3') Carmarthen
-              option(value='citi-4') Exeter
-              option(value='citi-5') Plymouth
-              option(value='citi-6') Southampton
-              option(value='citi-7') Reading
-              option(value='citi-8') London
-              option(value='citi-9') Oxford
-              option(value='citi-10') Birmingham
-              option(value='citi-11') Manchester
-              option(value='citi-12') Bognor Regis
-              option(value='citi-13') Mansfield
-              option(value='citi-14') Erith
-              option(value='citi-15') Bedford
-              option(value='citi-16') Dagenham
-              option(value='citi-17') Pocklington
-              option(value='citi-18') Croydon
-              option(value='citi-19') Windsor
+              option(value='city-1') Cardiff
+              option(value='city-2') Bridgend
+              option(value='city-3') Carmarthen
+              option(value='city-4') Exeter
+              option(value='city-5') Plymouth
+              option(value='city-6') Southampton
+              option(value='city-7') Reading
+              option(value='city-8') London
+              option(value='city-9') Oxford
+              option(value='city-10') Birmingham
+              option(value='city-11') Manchester
+              option(value='city-12') Bognor Regis
+              option(value='city-13') Mansfield
+              option(value='city-14') Erith
+              option(value='city-15') Bedford
+              option(value='city-16') Dagenham
+              option(value='city-17') Pocklington
+              option(value='city-18') Croydon
+              option(value='city-19') Windsor
       .cities-img-box
-        picture
-          source(media='(min-width: 992px)'
-                srcset='./img/cities-bg-xl-1x.png 1x, ./img/cities-bg-xl-2x.png 2x'
-                type='image/png')
-          source(srcset='./img/cities-bg-sm-1x.png 1x, ./img/cities-bg-sm-2x.png 2x'
-                type='image/png')
-          img(src='./img/cities-bg-xl-1x.png' alt='' loading='lazy')
+        img.cities-img-xl(src='./img/cities-bg-xl.svg' alt='' loading='lazy')
+        img.cities-img-sm(src='./img/cities-bg-sm.svg' alt='' loading='lazy')

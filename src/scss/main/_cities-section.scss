@@ -157,4 +157,18 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  @include media-breakpoint-up(lg) {
+    margin-top: -100px;
+  }
+}
+.cities-img-xl {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+.cities-img-sm {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 }

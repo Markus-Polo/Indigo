@@ -18,11 +18,11 @@ header.header
             a.header-nav__link(href='') Revievs
       .mobile-menu-holder.col-6.d-flex.col-lg-4
         .dropdown-language.playn-text
-          button.language-button.toggle-class-js(aria-label='language' data-target='.language-list' data-class-to-toggle='dropdown-show')
+          button.language-buttonbtn.btn-secondary.dropdown-toggle(aria-label='language' type='button' data-bs-toggle='dropdown' aria-expanded='false')
             span EN
             svg.icon-vector
               use(xlink:href='#vector')
-          ul.language-list
+          ul.language-list.dropdown-menu
             li.language-item
               a.language-link(href='') UA
             li.language-item
@@ -30,13 +30,12 @@ header.header
             li.language-item
               a.language-link(href='') PL
         .dropdown-call
-          .header-button-holder
-            button.playn-text.main-button.toggle-class-js(aria-label='cellphone' data-target='.tel-list' data-class-to-toggle='dropdown-show')
-              span Сontacts
-          button.coll-button.toggle-class-js(aria-label='cellphone' data-target='.tel-list' data-class-to-toggle='dropdown-show')
+          button.playn-text.main-button.coll-button-xl.btn-secondary.dropdown-toggle(aria-label='language' type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            span Сontacts
+          button.coll-button.btn-secondary.dropdown-toggle(aria-label='language' type='button' data-bs-toggle='dropdown' aria-expanded='false')
             svg.icon-viber
               use(xlink:href='#viber')
-          ul.tel-list
+          ul.tel-list.dropdown-menu
             li.tel-list__item
               a.tel-list__link(href='tel: +38000000000') +38000000000
             li.tel-list__item
@@ -44,10 +43,10 @@ header.header
             li.tel-list__item
               a.tel-list__link(href='tel: +38000000000') +38000000000
         .dropdown-nav
-          button.language-button.toggle-class-js(aria-label='navigation' data-target='.dropdown-nav__list' data-class-to-toggle='dropdown-show')
+          button.menu-button.btn-secondary.dropdown-toggle(aria-label='language' type='button' data-bs-toggle='dropdown' aria-expanded='false')
             svg.icon-burger
               use(xlink:href='#burger')
-          ul.dropdown-nav__list.playn-text
+          ul.dropdown-nav__list.playn-text.dropdown-menu
             li.dropdown-nav__item
               a.dropdown-nav__link(href='') Video
             li.dropdown-nav__item

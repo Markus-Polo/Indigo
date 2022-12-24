@@ -1,15 +1,3 @@
-.about-methot-text-sm {
-  @include media-breakpoint-up(xl) {
-    display: none;
-  }
-}
-.about-methot-text-xl {
-  display: none;
-  @include media-breakpoint-up(xl) {
-    display: block;
-    padding-top: 44px;
-  }
-}
 .about-methot-title-holder {
   display: flex;
   justify-content: center;
@@ -71,12 +59,23 @@
     }
   }
 }
+.about-methot-holder {
+  @include media-breakpoint-up(xl) {
+    padding-top: 44px;
+  }
+}
 .about-methot-text-wraper {
+  margin-right: -15px;
+  margin-left: -15px;
   padding: 42px 20px;
   border-radius: 20px;
   background-color: $neutral-light;
   @include media-breakpoint-up(lg) {
     padding: 65px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 .about-methot-text {
@@ -156,7 +155,7 @@
     font-size: 24px;
   }
   &:after {
-    height: 12px;
+    height: 16px;
     background-image: url('../img/vector_1.svg');
   }
 }

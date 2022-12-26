@@ -58,9 +58,9 @@
   align-items: center;
   justify-content: center;
 }
-.coll-button-xl,
+.call-button-xl,
 .menu-button,
-.coll-button,
+.call-button,
 .language-buttonbtn {
   &:after {
     display: none;
@@ -81,13 +81,13 @@
 .language-item {
   padding-top: 20px;
 }
-.coll-button-xl {
+.call-button-xl {
   display: none !important;
   @include media-breakpoint-up(xl) {
     display: flex !important;
   }
 }
-.coll-button {
+.call-button {
   @include media-breakpoint-up(xl) {
     display: none;
   }

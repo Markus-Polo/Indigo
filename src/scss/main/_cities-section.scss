@@ -1,6 +1,9 @@
 .cities-section {
   padding-top: 50px;
   padding-bottom: 50px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 200px;
+  }
 }
 .cities-title-holder {
   display: flex;

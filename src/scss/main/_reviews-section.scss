@@ -78,7 +78,13 @@
   }
 }
 .rev-slider {
+  margin-right: -12px;
+  margin-left: -12px;
   padding-bottom: 30px;
+  @include media-breakpoint-up(sm) {
+    margin-right: 0;
+    margin-left: 0;
+  }
   @include media-breakpoint-up(md) {
     padding-bottom: 0;
   }
@@ -99,12 +105,15 @@
 }
 .rev-item-holder {
   display: flex;
-  max-width: 500px;
+  max-width: 600px;
   padding: 18px 10px;
   border-radius: 20px;
   background-color: $primary;
   @include media-breakpoint-up(md) {
     padding: 34px 20px 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 700px;
   }
 }
 .rev-img-wrapper {

@@ -76,8 +76,8 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 384px;
-  height: 400px;
-  padding: 40px 10px;
+  min-height: 400px;
+  padding: 40px 18px;
   border: 5px solid $secondary-light;
   border-radius: 20px;
   @include media-breakpoint-up(sm) {

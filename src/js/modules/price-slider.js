@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-$('.prise-slider').slick({
+$('.price-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 4,

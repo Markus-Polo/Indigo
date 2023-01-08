@@ -74,9 +74,11 @@
 .price-slider-item-wrapepr {
   display: flex !important;
   justify-content: center;
+  padding-top: 36px;
 }
 .price-slider-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   max-width: 384px;
@@ -159,4 +161,27 @@
   @include media-breakpoint-up(xl) {
     background-size: 75%;
   }
+}
+.discount-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: $primary-light;
+  @include media-breakpoint-up(sm) {
+    top: -36px;
+    right: -36px;
+  }
+}
+.discount-value {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
 }

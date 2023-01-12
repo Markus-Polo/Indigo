@@ -1,0 +1,186 @@
+.price-title-holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-up(xl) {
+    justify-content: start;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+.price-title-box {
+  display: inline-block;
+  position: relative;
+  max-width: 400px;
+  padding: 12px 85px;
+  border-radius: 50px;
+  background-color: $secondary;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 22px 115px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 570px;
+    padding: 25px 140px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 475px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $neutral-lightest;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $neutral-lightest;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+}
+.price-slider-item-wrapepr {
+  display: flex !important;
+  justify-content: center;
+  padding-top: 36px;
+}
+.price-slider-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 384px;
+  min-height: 400px;
+  padding: 40px 18px;
+  border: 5px solid $secondary-light;
+  border-radius: 20px;
+  @include media-breakpoint-up(sm) {
+    padding: 32px 30px 40px;
+  }
+}
+.price-slider .slick-arrow {
+  display: none !important;
+}
+.price-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & li {
+    display: inline-block;
+    padding: 5px;
+  }
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: $primary-light;
+    font-size: 0;
+  }
+  /* stylelint-disable-next-line selector-max-compound-selectors */
+  .slick-active button {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+  }
+}
+.price-title {
+  font-size: 20px;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    font-size: 24px;
+  }
+}
+.price-list {
+  padding-top: 15px;
+  list-style-type: revert;
+  font-size: 16px;
+}
+.price-item {
+  padding: 5px 0;
+}
+.price-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.price-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 251px;
+  height: 56px;
+  padding: 16px 38px;
+  border: 3px solid $secondary-light;
+  border-radius: 76px;
+  background: $primary-light;
+  color: white;
+  font-size: 20px;
+}
+.background-wrapper {
+  @include media-breakpoint-up(lg) {
+    @include img-retina(
+      '../img/background-about-students.jpg',
+      '../img/background-about-students-2x.jpg'
+    );
+    background-repeat: no-repeat;
+    background-position: bottom -230px right;
+    background-size: 80%;
+  }
+  @include media-breakpoint-up(xl) {
+    background-size: 75%;
+  }
+}
+.discount-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: $primary-light;
+  @include media-breakpoint-up(sm) {
+    top: -36px;
+    right: -36px;
+  }
+}
+.discount-value {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}

@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-$('.rev-slider').slick({
+$('.reviews-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,

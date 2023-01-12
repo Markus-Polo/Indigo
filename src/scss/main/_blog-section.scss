@@ -1,0 +1,129 @@
+.blog-section {
+  padding-bottom: 50px;
+}
+.blog-title-holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-up(xl) {
+    justify-content: start;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+.blog-title-box {
+  display: inline-block;
+  position: relative;
+  max-width: 400px;
+  padding: 12px 85px;
+  border-radius: 50px;
+  background-color: $primary-light;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: 22px 115px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 570px;
+    padding: 25px 140px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 475px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $secondary-light;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: $secondary-light;
+    @include media-breakpoint-up(sm) {
+      width: 68px;
+      height: 68px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+}
+.blog-primary-img {
+  display: flex;
+  justify-content: center;
+}
+.blog-content-holder {
+  padding-top: 20px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 0;
+  }
+}
+.blog-secondary-title {
+  font-size: 20px;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+}
+.blog-text {
+  padding-top: 20px;
+  font-size: 16px;
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+  }
+}
+.blog-button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  @include media-breakpoint-up(xl) {
+    justify-content: flex-end;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 30px;
+  }
+}
+.blog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 100px;
+  border: 3px solid $neutral-lightest;
+  border-radius: 76px;
+  background: $secondary;
+  font-size: 20px;
+}
+.blog-secondary-img-wrapper {
+  display: none;
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    padding-top: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 66px;
+  }
+}

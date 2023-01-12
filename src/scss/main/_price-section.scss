@@ -68,9 +68,6 @@
     }
   }
 }
-.price-slider {
-  padding-bottom: 30px;
-}
 .price-slider-item-wrapepr {
   display: flex !important;
   justify-content: center;
@@ -94,10 +91,9 @@
   display: none !important;
 }
 .price-slider .slick-dots {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
   /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
   & li {
     display: inline-block;
@@ -153,7 +149,10 @@
 }
 .background-wrapper {
   @include media-breakpoint-up(lg) {
-    background-image: url('../img/background-about-students-2x.jpg');
+    @include img-retina(
+      '../img/background-about-students.jpg',
+      '../img/background-about-students-2x.jpg'
+    );
     background-repeat: no-repeat;
     background-position: bottom -230px right;
     background-size: 80%;

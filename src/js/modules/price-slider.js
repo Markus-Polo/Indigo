@@ -12,21 +12,18 @@ $('.price-slider').slick({
       breakpoint: 1700,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 1400,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 992,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
       },
     },
   ],

@@ -16,7 +16,8 @@ section
             source(srcet='./img/cooperation-slider-img/cooperation-slider-img_1.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_1.jpg 2x'
                   type='image/jpeg')
             img(src='./img/cooperation-slider-img/cooperation-slider-img_1.jpg' alt='blog primary img' loading='lazy')
-          button.cooperation-button.cooperation-button-1 Apply
+          button.cooperation-button.cooperation-button-1(data-bs-toggle='modal' data-bs-target='#cooperation-modal-1')
+            | Apply
       .cooperation-slider-item
         .cooperation-slider-title-wrapper
           h3.cooperation-slider-title
@@ -28,7 +29,8 @@ section
             source(srcet='./img/cooperation-slider-img/cooperation-slider-img_2.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_2.jpg 2x'
                   type='image/jpeg')
             img(src='./img/cooperation-slider-img/cooperation-slider-img_2.jpg' alt='blog primary img' loading='lazy')
-          button.cooperation-button.cooperation-button-2 Apply
+          button.cooperation-button.cooperation-button-2(data-bs-toggle='modal' data-bs-target='#cooperation-modal-2')
+            | Apply
       .cooperation-slider-item
         .cooperation-slider-title-wrapper
           h3.cooperation-slider-title
@@ -40,4 +42,11 @@ section
             source(srcet='./img/cooperation-slider-img/cooperation-slider-img_3.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_3.jpg 2x'
                   type='image/jpeg')
             img(src='./img/cooperation-slider-img/cooperation-slider-img_3.jpg' alt='blog primary img' loading='lazy')
-          button.cooperation-button.cooperation-button-3 Apply
+          button.cooperation-button.cooperation-button-3(data-bs-toggle='modal' data-bs-target='#cooperation-modal-3')
+            | Apply
+  .cooperation-modal-1
+    include ../../html/cooperation-modal-1.html
+  .cooperation-modal-2
+    include ../../html/cooperation-modal-2.html
+  .cooperation-modal-3
+    include ../../html/cooperation-modal-3.html

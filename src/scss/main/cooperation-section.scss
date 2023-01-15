@@ -149,10 +149,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
-  height: 54px;
+  padding: 12px 82px;
   border-radius: 76px;
   color: white;
+  @include media-breakpoint-up(sm) {
+    padding: 12px 136px;
+  }
 }
 .cooperation-button-1 {
   border: 3px solid $neutral-light;
@@ -192,5 +194,46 @@
     width: 15px;
     height: 15px;
     opacity: 1;
+  }
+}
+.cooperation-modal-content {
+  padding: 30px 0;
+  border-radius: 50px;
+  background: $primary-light;
+  box-shadow: 0 0 50px #fce78826;
+  @include media-breakpoint-up(sm) {
+    padding: 30px;
+  }
+}
+.cooperation-modal-header,
+.cooperation-modal-footer {
+  justify-content: center;
+}
+.cooperation-modal-title {
+  color: white;
+  font-size: 20px;
+}
+.cooperation-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cooperation-modal-input {
+  width: 100%;
+  padding: 15px 30px;
+  border: 3px solid $secondary-light;
+  border-radius: 52px;
+}
+.cooperation-modal-primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 106px;
+  border: 5px solid $neutral;
+  border-radius: 76px;
+  background: $neutraydark;
+  color: white;
+  @include media-breakpoint-up(sm) {
+    padding: 20px 154px;
   }
 }

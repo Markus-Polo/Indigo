@@ -1,16 +1,25 @@
 <div
   class="modal fade"
-  id="cooperation-modal-1"
+  id="cooperation-modal"
   tabindex="-1"
-  aria-labelledby="exampleModalLabel"
+  aria-labelledby="cooperation-modal-label"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content cooperation-modal-content">
       <div class="modal-header cooperation-modal-header">
-        <h5 class="modal-title cooperation-modal-title" id="exampleModalLabel">
-          Apple
+        <h5
+          class="modal-title cooperation-modal-title"
+          id="cooperation-modal-label"
+        >
+          Apply
         </h5>
+        <button
+          type="button"
+          class="btn-close cooperation-btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
         <form action="" class="cooperation-modal-form">
@@ -34,15 +43,13 @@
             type="tel"
             placeholder="Phone number"
           />
+          <button
+            type="submit"
+            class="btn btn-primary cooperation-modal-primary-button"
+          >
+            Apply
+          </button>
         </form>
-      </div>
-      <div class="modal-footer cooperation-modal-footer">
-        <button
-          type="button"
-          class="btn btn-primary cooperation-modal-primary-button"
-        >
-          Apple
-        </button>
       </div>
     </div>
   </div>

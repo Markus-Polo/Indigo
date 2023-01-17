@@ -202,12 +202,24 @@
   background: $primary-light;
   box-shadow: 0 0 50px #fce78826;
   @include media-breakpoint-up(sm) {
-    padding: 30px;
+    padding: 30px 15px;
   }
 }
-.cooperation-modal-header,
-.cooperation-modal-footer {
+.cooperation-modal-header {
+  position: relative;
   justify-content: center;
+}
+.cooperation-btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-image: url('../img/close-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .cooperation-modal-title {
   color: white;
@@ -216,6 +228,7 @@
 .cooperation-modal-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 .cooperation-modal-input {
@@ -228,6 +241,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 360px;
+  margin-top: 10px;
   padding: 20px 106px;
   border: 5px solid $neutral;
   border-radius: 76px;

@@ -1,0 +1,47 @@
+section
+  .container
+    .cooperation-title-holder
+      .cooperation-title-box
+        h2.title-2 Cooperation
+    .cooperation-slider
+      .cooperation-slider-item
+        .cooperation-slider-title-wrapper
+          h3.cooperation-slider-title
+            | I want the Indigo Mental Club methodology 
+            | to be taught at my school or in a kids club
+        .cooperation-slider-content
+          picture.cooperation-slider-img
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_1.webp 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_1.webp 2x'
+                  type='image/webp')
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_1.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_1.jpg 2x'
+                  type='image/jpeg')
+            img(src='./img/cooperation-slider-img/cooperation-slider-img_1.jpg' alt='blog primary img' loading='lazy')
+          button.cooperation-button.cooperation-button-1(data-bs-toggle='modal' data-bs-target='#cooperation-modal')
+            | Apply
+      .cooperation-slider-item
+        .cooperation-slider-title-wrapper
+          h3.cooperation-slider-title
+            | I want to be a brand ambassador
+        .cooperation-slider-content
+          picture.cooperation-slider-img
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_2.webp 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_2.webp 2x'
+                  type='image/webp')
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_2.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_2.jpg 2x'
+                  type='image/jpeg')
+            img(src='./img/cooperation-slider-img/cooperation-slider-img_2.jpg' alt='blog primary img' loading='lazy')
+          button.cooperation-button.cooperation-button-2(data-bs-toggle='modal' data-bs-target='#cooperation-modal')
+            | Apply
+      .cooperation-slider-item
+        .cooperation-slider-title-wrapper
+          h3.cooperation-slider-title
+            | I want to be your teacher
+        .cooperation-slider-content
+          picture.cooperation-slider-img
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_3.webp 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_3.webp 2x'
+                  type='image/webp')
+            source(srcet='./img/cooperation-slider-img/cooperation-slider-img_3.jpg 1x, ./img/cooperation-slider-img/cooperation-slider-img-2x_3.jpg 2x'
+                  type='image/jpeg')
+            img(src='./img/cooperation-slider-img/cooperation-slider-img_3.jpg' alt='blog primary img' loading='lazy')
+          button.cooperation-button.cooperation-button-3(data-bs-toggle='modal' data-bs-target='#cooperation-modal')
+            | Apply
+    include ../../html/cooperation-modal.html

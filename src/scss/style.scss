@@ -8,6 +8,7 @@
 @import './main';
 @import './atomic_class';
 @import './general-class';
+@import './footer';
 
 .svg-sprite {
   @include visually-hidden;

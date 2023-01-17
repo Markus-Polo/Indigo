@@ -1,0 +1,55 @@
+section.footer-section
+  .container
+    .row
+      .footer-logo-wrapper.col-6.col-xl-2
+        a(aria-label='logo' href='')
+          img(src='./img/logo.svg' alt='')
+      .footer-contact-button-holder.col-6.col-xl-3.offset-xl-1
+        button.footer-contact-button.btn-secondary.dropdown-toggle(aria-label='language' type='button' data-bs-toggle='dropdown' aria-expanded='false')
+          | Сontacts
+        ul.tel-list.dropdown-menu
+          li.tel-list__item
+            a.tel-list__link(href='tel: +38000000000') +38000000000
+          li.tel-list__item
+            a.tel-list__link(href='tel: +38000000000') +38000000000
+          li.tel-list__item
+            a.tel-list__link(href='tel: +38000000000') +38000000000
+      nav.footer-nav.col-xl-6
+        ul.footer-nav__list
+          li
+            a(href='') Video
+          li
+            a(href='') About Method
+          li
+            a(href='') About School
+          li
+            a(href='') Price
+          li
+            a(href='') Revievs
+    .social-wrapper
+      ul.social-networks-list
+        li
+          a(href='')
+            svg.social-networks-icon
+              use(xlink:href='#mail')
+        li
+          a(href='')
+            svg.social-networks-icon
+              use(xlink:href='#whatsapp')
+        li
+          a(href='')
+            svg.social-networks-icon
+              use(xlink:href='#instagram')
+        li
+          a(href='')
+            svg.social-networks-icon
+              use(xlink:href='#youtube')
+        li
+          a(href='')
+            svg.social-networks-icon
+              use(xlink:href='#facebook')
+      .offer-agreement-wrapper
+        a(href='')
+        svg.offer-agreement-icon
+              use(xlink:href='#doc-icon')
+        | Open offer agreement

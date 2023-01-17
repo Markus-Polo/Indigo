@@ -1,0 +1,114 @@
+.footer-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: whitesmoke;
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+.footer-logo-wrapper,
+.footer-contact-button-holder,
+.footer-nav {
+  @include media-breakpoint-up(xl) {
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 3;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+}
+.footer-logo-wrapper,
+.footer-nav {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer-nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.footer-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+}
+.footer-contact-button-holder {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: end;
+  }
+}
+.footer-contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 84px;
+  border: 3px solid $secondary;
+  border-radius: 20px;
+  font-size: 32px;
+  @include media-breakpoint-up(xxl) {
+    padding: 6px 110px;
+  }
+  &:after {
+    display: none;
+  }
+}
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  @include media-breakpoint-up(md) {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 50px;
+  }
+}
+.social-networks-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @include media-breakpoint-up(lg) {
+    gap: 34px;
+  }
+}
+.social-networks-list,
+.social-wrapper {
+  @include media-breakpoint-up(md) {
+    &:nth-child(1) {
+      order: 2;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+}
+.social-networks-icon {
+  width: 40px;
+  height: 40px;
+}
+.offer-agreement-wrapper {
+  font-size: 16px;
+}
+.offer-agreement-icon {
+  width: 40px;
+  height: 30px;
+  padding-right: 10px;
+}

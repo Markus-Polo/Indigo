@@ -2,6 +2,7 @@
   padding-top: 50px;
   @include media-breakpoint-up(xl) {
     padding-top: 200px;
+    padding-bottom: 114px;
     /* stylelint-disable-next-line function-url-quotes */
     background: url(../img/advantages-bagground.png);
     background-repeat: no-repeat;

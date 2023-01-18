@@ -146,6 +146,9 @@
   background: $primary-light;
   color: white;
   font-size: 20px;
+  &:hover {
+    background: $secondary;
+  }
 }
 .background-wrapper {
   @include media-breakpoint-up(lg) {

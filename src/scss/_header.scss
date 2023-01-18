@@ -24,6 +24,11 @@
     padding-right: 50px;
   }
 }
+.header-nav__link {
+  &:hover {
+    text-shadow: 6px 6px 20px #0000007a;
+  }
+}
 .mobile-menu-holder {
   display: flex;
   justify-content: flex-end;
@@ -86,6 +91,9 @@
   @include media-breakpoint-up(lg) {
     display: flex !important;
   }
+  &:hover {
+    box-shadow: 6px 6px 15px rgba($color: $secondary, $alpha: 50%);
+  }
 }
 .menu-button,
 .call-button {
@@ -99,7 +107,7 @@
   justify-content: center;
   width: 230px;
   padding: 6px;
-  border: 3px solid #fcba32;
+  border: 3px solid $secondary;
   border-radius: 20px;
   @include media-breakpoint-up(xl) {
     width: 350px;

@@ -161,6 +161,9 @@
   @include media-breakpoint-up(sm) {
     padding: 12px 136px;
   }
+  &:hover {
+    border: 3px solid white;
+  }
 }
 .cooperation-button-1 {
   border: 3px solid $neutral-light;
